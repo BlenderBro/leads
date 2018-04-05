@@ -4,16 +4,22 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 // Material UI imports
-import { MatButtonModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule } from '@angular/material';
+import {MatIconModule} from '@angular/material/icon';
+
 
 
 @NgModule({
   imports: [
     CommonModule,
-    MatButtonModule
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule
   ],
   exports: [
-      MatButtonModule
+    MatToolbarModule,
+      MatButtonModule,
+      MatIconModule
   ],
   declarations: []
 })
