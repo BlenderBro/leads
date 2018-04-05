@@ -1,0 +1,31 @@
+.cover{
+    background: #3F51B5;
+    z-index: -1;
+    position: relative;
+    height: 300px;
+    text-align: center;
+}
+.cta{
+    color:#fff;
+    margin-top: 80px; 
+    font-weight: 300;
+    position: relative;
+    display: inline-block;
+}
+.cta-button{
+    color:#fff;
+    margin-top: -4px;
+    font-weight: 100;
+}
+.left{
+    float: left;
+    width: 50%;
+    height: 200px;
+    background: cadetblue;
+}
+.right{
+    float: left;
+    width: 50%;
+    height: 200px;
+    background: brown;
+}
