@@ -13,13 +13,13 @@ export class NavbarComponent implements OnInit {
 
     openLogIn(){
         let dialogRef = this.dialog.open(LoginComponent, {
-            width: '600px', 
-            height: '400px',
+            width: '400px', 
+            height: '480px',
             data: 'txt is passed into the blabla'
         });
 
         dialogRef.afterClosed().subscribe( result => {
-            console.log('closed: ');
+            console.log('closed');
         })
     }
 

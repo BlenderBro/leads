@@ -9,6 +9,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 
@@ -22,6 +23,7 @@ import {MatMenuModule} from '@angular/material/menu';
     MatFormFieldModule,
     MatInputModule,
     MatMenuModule,
+    MatTabsModule,
   ],
   exports: [
     MatToolbarModule,
@@ -31,6 +33,7 @@ import {MatMenuModule} from '@angular/material/menu';
       MatFormFieldModule,
       MatInputModule,
       MatMenuModule,
+      MatTabsModule,
   ],
   declarations: []
 })
