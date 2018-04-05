@@ -5,6 +5,7 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './auth/login/login.component';
 
+
 const routes: Routes = [
     { path: '', component: LandingPageComponent },
     { path: 'dashboard', component: DashboardComponent },

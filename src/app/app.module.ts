@@ -4,6 +4,8 @@ import { AppRoutingModule, RoutingComponents } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './partials/navbar/navbar.component';
+
 
 
 
@@ -11,6 +13,8 @@ import { AppComponent } from './app.component';
     declarations: [
         AppComponent,
         RoutingComponents,
+        NavbarComponent
+
     ],
     imports: [
         BrowserModule,

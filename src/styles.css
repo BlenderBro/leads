@@ -1,22 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-
+/******************************************************************** 
+    Structure
+*********************************************************************
+*/
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-mat-toolbar{
-    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
-    z-index: 10;
-}
-.has-text-center{
-    text-align: center;
-}
 .row{
     padding: 16px;
+    max-width: 920px;
+    margin: 0 auto;
 }
 .normalize{
     clear:both;
+}
+.padding-50{
+    padding-top:50px;
+}
+.padding-30{
+    margin-top: 100px;
+}
+.padding-100{
+    padding-top: 100px;
+}
+
+/********************************************************************
+    Typography
+*********************************************************************
+*/
+
+.has-text-center{
+    text-align: center;
+}
+.thin{
+    font-weight: 100;
+}
+.medium{
+    font-weight: 400;
 }

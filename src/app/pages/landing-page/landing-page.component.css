@@ -21,11 +21,23 @@
     float: left;
     width: 50%;
     height: 200px;
-    background: cadetblue;
 }
 .right{
     float: left;
     width: 50%;
-    height: 200px;
-    background: brown;
+    height: 350px;
+}
+.copy{
+    vertical-align: middle;
+    padding-top: 100px;
+}
+#mobile{
+    max-height: 350px;
+    float:right;
+    padding-right: 50px;
+}
+#satellite{
+    max-height: 350px;
+    float:left;
+    padding-right: 50px;
 }
