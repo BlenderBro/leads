@@ -5,13 +5,13 @@
     <mat-tab-group class="space">
         <mat-tab label="Log In">
             <mat-form-field class="space-20">
-                <input type="email" matInput placeholder="Email">
+                <input [(ngModel)]="email" type="email" matInput placeholder="Email">
             </mat-form-field>
             <mat-form-field>
-                <input type="password" matInput placeholder="Password">
+                <input [(ngModel)]="password" type="password" matInput placeholder="Password">
             </mat-form-field>
             <div class="submit space">
-                <button color="primary" mat-raised-button>Log me in!</button>
+                <button (click)="login()" [disabled]="!email || !password" color="primary" mat-raised-button>Log me in!</button>
             </div>
         </mat-tab>
         <mat-tab label="Register">
@@ -19,16 +19,16 @@
                 <input type="text" matInput placeholder="Name">
             </mat-form-field>
             <mat-form-field>
-                <input type="email" matInput placeholder="Email">
+                <input [(ngModel)]="email" type="email" matInput placeholder="Email">
             </mat-form-field>
             <mat-form-field>
-                <input type="password" matInput placeholder="Password">
+                <input [(ngModel)]="password" type="password" matInput placeholder="Password">
             </mat-form-field>
             <mat-form-field>
                 <input type="password" matInput placeholder="Confirm Password">
             </mat-form-field>
             <div class="submit space">
-                <button color="primary" mat-raised-button>Create my account!</button>
+                <button (click)="signup()" color="primary" mat-raised-button>Create my account!</button>
             </div>
         </mat-tab>
     </mat-tab-group>

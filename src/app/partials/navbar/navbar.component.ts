@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { LoginComponent } from '../../auth/login/login.component';
+import { AuthService } from '../../auth/auth-service.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,7 +10,7 @@ import { LoginComponent } from '../../auth/login/login.component';
 })
 export class NavbarComponent implements OnInit {
 
-    constructor(public dialog: MatDialog){}
+    constructor(public dialog: MatDialog, public authService: AuthService){}
 
     openLogIn(){
         let dialogRef = this.dialog.open(LoginComponent, {
@@ -21,6 +22,10 @@ export class NavbarComponent implements OnInit {
         dialogRef.afterClosed().subscribe( result => {
             console.log('closed');
         })
+    }
+
+    logout(){
+        this.authService.logout();
     }
 
   ngOnInit() {
